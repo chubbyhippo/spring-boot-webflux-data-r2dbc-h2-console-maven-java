@@ -17,7 +17,7 @@ public class H2Config {
     private Server webServer;
 
     @Value("${h2-server.port}")
-    Integer h2ConsolePort;
+    private Integer h2ConsolePort;
 
     @EventListener(ContextRefreshedEvent.class)
     public void start() throws java.sql.SQLException {
